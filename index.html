@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kar Kristali Parmak İzi Analizi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        p.subtitle {
+            text-align: center;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+            font-size: 0.9em;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.02);
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+        .full-width-media {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .full-width-media img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .pdf-container {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .pdf-container {
+                height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kar Kristali Parmak İzi Analizi</h1>
+        <p class="subtitle">Gravner-Griffeath Hücresel Otomasyon Modeli ile Resim Tabanlı Kar Kristali Üretimi</p>
+
+        <!-- Gerçekçi ve Bentley Renderları -->
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="içimizdeki_zaman.jpg" alt="Gerçekçi Render">
+                <div class="caption">Gerçekçi Render Modu</div>
+            </div>
+            <div class="gallery-item">
+                <img src="içimizdeki_zaman_bentley.jpg" alt="Bentley Tarzı Render">
+                <div class="caption">19. Yüzyıl Bentley Tarzı Render</div>
+            </div>
+        </div>
+
+        <!-- Büyüme Aşaması -->
+        <div class="full-width-media">
+            <h2>Kristal Büyüme Aşamaları</h2>
+            <img src="içimizdeki_zaman_growth.jpg" alt="Büyüme Süreci">
+            <div class="caption">Fiziksel parametrelere dayalı büyüme simülasyonu</div>
+        </div>
+
+        <!-- PDF Raporu -->
+        <div class="full-width-media">
+            <h2>Metodoloji ve Analiz Raporu</h2>
+            <div class="pdf-container">
+                <iframe src="rapor_içimizdeki_zaman.pdf" title="Metodoloji Raporu"></iframe>
+            </div>
+            <div class="caption" style="margin-top: 15px;">
+                <a href="rapor_içimizdeki_zaman.pdf" download style="color: #4da6ff; text-decoration: none;">PDF dosyasını indirebilirsiniz</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
